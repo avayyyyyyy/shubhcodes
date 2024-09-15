@@ -72,30 +72,41 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script type="application/ld+json">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Shubhankit Jain",
-            "url": "https://shubhcodes.me",
-            "image": "https://utfs.io/f/4e91f9d4-4a88-4b19-a25e-6ebdee6b7229-dhi6qr.png",
-            "sameAs": [
-              "https://www.linkedin.com/in/shubhcodes",
-              "https://github.com/avayyyyyyy"
-            ],
-            "jobTitle": "Founder",
-            "worksFor": {
-              "@type": "Organization",
-              "name": "Opinify.in"
-            },
-            "knowsAbout": ["Web Development", "React", "JavaScript", "TypeScript", "AI Development"],
-            "alumniOf": {
-              "@type": "CollegeOrUniversity",
-              "name": "Poornima University"
-            },
-            "description": "Shubhankit Jain is a Web Developer and Software Engineer with a passion for creating innovative AI-driven solutions. As the winner of India's first GEN AI Hackathon, Shubhankit developed 'StoryDev', a tool for parents to create customizable bedtime stories using GEN AI. He is also a Freelance Full Stack AI Developer and is currently pursuing a Bachelor of Computer Applications at Poornima University."
-          }`}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Shubhankit Jain",
+              url: "https://shubhcodes.me",
+              image:
+                "https://utfs.io/f/4e91f9d4-4a88-4b19-a25e-6ebdee6b7229-dhi6qr.png",
+              sameAs: [
+                "https://www.linkedin.com/in/shubhcodes",
+                "https://github.com/avayyyyyyy",
+              ],
+              jobTitle: "Founder",
+              worksFor: {
+                "@type": "Organization",
+                name: "Opinify.in",
+              },
+              knowsAbout: [
+                "Web Development",
+                "React",
+                "JavaScript",
+                "TypeScript",
+                "AI Development",
+              ],
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "Poornima University",
+              },
+              description:
+                "Shubhankit Jain is a Web Developer and Software Engineer with a passion for creating innovative AI-driven solutions. As the winner of India's first GEN AI Hackathon, Shubhankit developed 'StoryDev', a tool for parents to create customizable bedtime stories using GEN AI. He is also a Freelance Full Stack AI Developer and is currently pursuing a Bachelor of Computer Applications at Poornima University.",
+            }),
+          }}
+        />
         <link rel="canonical" href="https://shubhcodes.me" />
       </head>
       <body className={`${bricolageGrotesque.className} antialiased`}>

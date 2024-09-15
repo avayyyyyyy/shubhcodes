@@ -77,8 +77,8 @@ const HackathonCard = ({
 const Hackathon = () => {
   return (
     <section id="hackathons">
-      <div className="space-y-12 w-full py-12">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <div className="w-full ">
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4 text-center">
           <div className="inline-block rounded-lg bg-secondary text-primary px-3 py-1 text-sm">
             Highlights
           </div>

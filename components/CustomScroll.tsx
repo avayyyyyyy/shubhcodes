@@ -1,22 +1,38 @@
 "use client";
-import { useEffect, useRef } from "react";
-import LocomotiveScroll from "locomotive-scroll";
+import { useEffect, useRef, useState } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
+
+// Import the types from locomotive-scroll
+import type LocomotiveScroll from "locomotive-scroll";
 
 const CustomScroll = ({ children }: { children: React.ReactNode }) => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [locomotiveScroll, setLocomotiveScroll] =
+    useState<LocomotiveScroll | null>(null);
 
   useEffect(() => {
-    if (!scrollRef.current) return;
+    if (typeof window === "undefined") return;
 
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      getDirection: true,
+    let instance: LocomotiveScroll | null = null;
+
+    import("locomotive-scroll").then((locomotiveModule) => {
+      const LocomotiveScroll = locomotiveModule.default;
+
+      if (scrollRef.current) {
+        instance = new LocomotiveScroll({
+          el: scrollRef.current,
+          smooth: true,
+        });
+
+        setLocomotiveScroll(instance);
+      }
     });
 
     return () => {
-      scroll.destroy();
+      if (instance) {
+        instance.destroy();
+      }
     };
   }, []);
 
@@ -24,7 +40,7 @@ const CustomScroll = ({ children }: { children: React.ReactNode }) => {
     <div
       data-scroll-container
       ref={scrollRef}
-      style={{ minHeight: "100vh", margin: 0, padding: 0 }}
+      style={{ minHeight: "fit-content" }}
     >
       {children}
     </div>

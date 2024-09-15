@@ -52,16 +52,16 @@ function ProjectCard({
               alt=""
             />
           </div>
-          <div>
+          <div className="w-full flex flex-col justify-center items-start">
             {trending && (
-              <AnimatedGradientText className="mt-3 w-fit text-start">
-                🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+              <AnimatedGradientText className="mt-3 w-fit text-xs">
+                🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-primary/30" />{" "}
                 <span
                   className={cn(
                     `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
                   )}
                 >
-                  #{++i} Best
+                  #{++i} Trending
                 </span>
               </AnimatedGradientText>
             )}
@@ -137,7 +137,7 @@ const Projects = () => {
       image:
         "https://utfs.io/f/035b9037-8519-4d74-8e4d-0fbca39ab083-va0yy.webp",
       name: "Piggy Banker - Finance Tracking App",
-      trending: true,
+      trending: false,
       techStack: [
         "NextJS",
         "Typescript",
@@ -155,7 +155,7 @@ const Projects = () => {
       image:
         "https://utfs.io/f/fabf40ec-956e-495e-83d7-24ac093cee60-qei8wt.webp",
       name: "Ape Armor - Custom case brand",
-      trending: true,
+      trending: false,
       techStack: ["NextJS", "Typescript", "KindeAuth", "Shadcn UI", "Prisma"],
       shortDesc:
         "Your all-in-one solution for efficiently creating some cool custom back case for your iPhone.",
@@ -167,7 +167,7 @@ const Projects = () => {
       image:
         "https://utfs.io/f/b199c915-585e-4897-a7a9-5b5612e499dd-zihdxl.webp",
       name: "Tweet Craft - AI Tweet Generator",
-      trending: true,
+      trending: false,
       techStack: ["NextJS", "KindeAuth", "TailwindCSS"],
       shortDesc:
         "TweetCraft revolutionizes tweeting with AI-generated content! Input your topic, choose a mood, and voila - viral tweets at your fingertips.",
@@ -179,7 +179,7 @@ const Projects = () => {
       image:
         "https://utfs.io/f/4b474f0e-382b-4ef0-aa9e-c1571a43daaf-q2nukk.webp",
       name: "Note Nest - Notes Taking App",
-      trending: true,
+      trending: false,
       techStack: ["NextJS", "Typescript", "Prisma", "Shadcn UI", "KindeAuth"],
       shortDesc:
         "Created a complete Full Stack SAAS application using the latest Modern Framework called NextJs 14.",

@@ -110,7 +110,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://shubhcodes.me" />
       </head>
       <body className={`${bricolageGrotesque.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="system">
           <TooltipProvider delayDuration={0}>
             {children}
             <NavDock />

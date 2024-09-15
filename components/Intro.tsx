@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <div className="flex z-50 flex-col-reverse md:flex-row items-center md:items-start gap-4">
       <div className="w-full md:w-2/3 lg:w-10/12 flex flex-col gap-4">
-        <h1 className="text-3xl lg:flex lg:gap-x-3 block sm:text-4xl font-bold mb-2 md:mb-4 text-center md:text-left">
+        <h1 className="text-3xl lg:flex lg:flex-wrap lg:gap-x-3 block sm:text-4xl font-bold mb-2 md:mb-4 text-center md:text-left">
           <div>Hola!</div>
           <div>I&apos;m Shubhankit Jain 👋</div>
         </h1>
@@ -20,8 +20,8 @@ const Intro = () => {
         <Image
           src="/Shubhankit.png"
           alt="Profile Picture"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           className="rounded-full border border-secondary h-24 w-24 sm:h-28 z-50 sm:w-28 lg:h-36 lg:w-36"
         />
       </div>

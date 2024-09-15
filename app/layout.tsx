@@ -85,7 +85,7 @@ export default function RootLayout({
             ],
             "jobTitle": "Founder",
             "worksFor": {
-              "@type": "Company",
+              "@type": "Organization",
               "name": "Opinify.in"
             },
             "knowsAbout": ["Web Development", "React", "JavaScript", "TypeScript", "AI Development"],

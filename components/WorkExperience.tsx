@@ -8,7 +8,7 @@ const workExperiences = [
     companyUrl: "https://www.getmerlin.in/",
     date: "October, 2024 - Present",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore ullam sequi blanditiis odio. Error consectetur enim, assumenda consequuntur adipisci provident rem possimus beatae distinctio ipsum nemo quidem quo fuga!",
+      "Working on a project to create an AI-driven website assistant. I'm exploring the capabilities of Next.js to develop a user-friendly and intelligent tool.",
     isLatest: true,
   },
   {

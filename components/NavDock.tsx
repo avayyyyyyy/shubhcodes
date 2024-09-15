@@ -50,7 +50,7 @@ export default function NavDock() {
           ))}
           <Separator
             orientation="vertical"
-            className="mx-2 h-8 self-center bg-black/40"
+            className="mx-2 h-8 self-center bg-primary/40"
           />
           {Object.entries(DATA.contact.social).map(
             ([key, value]) =>
@@ -79,7 +79,7 @@ export default function NavDock() {
           )}
           <Separator
             orientation="vertical"
-            className="mx-2 h-8 self-center bg-black/40"
+            className="mx-2 h-8 self-center bg-primary/40"
           />
           <DockIcon>
             <Tooltip>

@@ -5,8 +5,9 @@ const Intro = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-4">
       <div className="w-full md:w-2/3 lg:w-10/12 flex flex-col gap-4">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2 md:mb-4 text-center md:text-left">
-          Hii! I&apos;m Shubhankit Jain 👋
+        <h1 className="text-3xl lg:flex block sm:text-4xl font-bold mb-2 md:mb-4 text-center md:text-left">
+          <div>Hii! </div>
+          <div>I&apos;m Shubhankit Jain 👋</div>
         </h1>
         <p className="text-sm md:text-base text-primary/80 text-center sm:text-left">
           Seasoned Fullstack Engineer with 3+ years of experience in building

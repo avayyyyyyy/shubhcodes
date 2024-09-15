@@ -110,7 +110,7 @@ const Hackathon = () => {
 const DATA = {
   hackathons: [
     {
-      title: "Won the GEN AI Hackathon 🚀",
+      title: "GEN AI Hackathon 🚀",
       description:
         "I created a solution to help modern parents who struggle with coming up with new bedtime stories every day. The application, called 'StoryDev', uses GEN AI to allow parents to create fully customizable stories. StoryDev even includes a face-swapping feature through the LICA face swapping API.",
       location: "India",

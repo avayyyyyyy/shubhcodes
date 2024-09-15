@@ -17,9 +17,9 @@ const bricolageGrotesque = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "Shubhankit Jain - Web Developer & Software Engineer",
   description:
-    "Shubhankit Jain's personal portfolio showcasing achievements like winning India's first GEN AI Hackathon, freelancing as a Full Stack AI Developer, and pursuing a Bachelor of Computer Applications at Poornima University.",
+    "Shubhankit Jain's personal portfolio website for showcasing thier achievements like winning Hackathons, freelancing as a Full Stack AI Developer or Professional Experiences and pursuing a Bachelor of Computer Applications (BCA) at Poornima University.",
   keywords:
-    "Shubhankit Jain, portfolio, web developer, software engineer, React, JavaScript, TypeScript, GEN AI Hackathon, Full Stack AI Developer, StoryDev, Poornima University",
+    "Shubhankit Jain, portfolio, web developer, software engineer, React, JavaScript, TypeScript, Full Stack AI Developer, StoryDev, Poornima University",
   authors: [{ name: "Shubhankit Jain" }],
   openGraph: {
     type: "website",
@@ -62,7 +62,6 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
-  themeColor: "#ffffff",
 };
 
 export default function RootLayout({

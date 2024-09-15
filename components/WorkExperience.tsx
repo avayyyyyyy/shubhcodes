@@ -29,7 +29,7 @@ const educationExperiences = [
     institutionUrl: "https://www.poornima.edu.in/",
     date: "2022 - 2025",
     description:
-      "I am currently enrolled in the Bachelor of Computer Applications (BCA) program at Poornima University, focusing on core areas like software development, data analysis, and artificial intelligence. The curriculum includes hands-on projects and internships, enhancing both my theoretical understanding and practical skills. This program is equipping me with the expertise needed to excel in the tech industry.",
+      "I am currently enrolled in the Bachelor of Computer Applications (BCA) program at Poornima University, focusing on core areas like software development, Problem solving, Core fundamentals and Cyber Security. This enhances both my theoretical understanding and practical skills. This program is equipping me with the expertise needed to excel in the tech industry.",
     isLatest: false,
   },
 ];

@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NavDock from "@/components/NavDock";
 import Meteors from "@/components/magicui/meteors";
-import CustomScroll from "@/components/CustomScroll";
 
 // Load Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -115,7 +114,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
-            <CustomScroll>{children}</CustomScroll>
+            {children}
             <NavDock />
           </TooltipProvider>
         </ThemeProvider>

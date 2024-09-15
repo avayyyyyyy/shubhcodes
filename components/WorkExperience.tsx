@@ -24,7 +24,7 @@ const workExperiences = [
 
 const educationExperiences = [
   {
-    title: "Bachelor of Computer Application (BCA) 🎓",
+    title: "Bachelor of Computer Application 🎓",
     institution: "Poornima University",
     institutionUrl: "https://www.poornima.edu.in/",
     date: "2022 - 2025",

@@ -134,7 +134,7 @@ const DATA = {
     {
       title: "MUJ Hackx 2.0",
       description:
-        "Built a Crowdsourced Disaster Reporting Tool was an amazing experience. With features like AI-driven detection and SOS, we aim to improve real-time disaster response.",
+        "Built a Crowdsourced Disaster Reporting Tool with features like AI-driven detection and SOS, we aim to improve real-time disaster response.",
       location: "India",
       dates: "September 2024",
       organisedBy: "Manipal University, Jaipur",

@@ -1,7 +1,6 @@
 import Contact from "@/components/Contact";
 import Hackathon from "@/components/Hackathon";
 import Intro from "@/components/Intro";
-import Meteors from "@/components/magicui/meteors";
 import Projects from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
@@ -16,7 +15,6 @@ export default function Home() {
         <Projects />
         <Hackathon />
         <Contact />
-        <Meteors />
       </main>
     </div>
   );

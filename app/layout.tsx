@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NavDock from "@/components/NavDock";
+import Meteors from "@/components/magicui/meteors";
 
 // Load Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -109,13 +110,16 @@ export default function RootLayout({
         />
         <link rel="canonical" href="https://shubhcodes.me" />
       </head>
-      <body className={`${bricolageGrotesque.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+      <body
+        className={`${bricolageGrotesque.className} antialiased z-50 overflow-x-hidden`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
             {children}
             <NavDock />
           </TooltipProvider>
         </ThemeProvider>
+        <Meteors number={30} />
       </body>
     </html>
   );

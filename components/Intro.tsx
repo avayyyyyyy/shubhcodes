@@ -16,13 +16,13 @@ const Intro = () => {
           full-stack development, with a small knack for deployment.
         </p>
       </div>
-      <div className="w-full sm:w-1/3 lg:w-3/12 flex justify-center sm:justify-center">
+      <div className="w-full sm:w-1/3 lg:w-4/12 flex justify-center sm:justify-center">
         <Image
           src="/Shubhankit.png"
           alt="Profile Picture"
           width={500}
           height={500}
-          className="rounded-full border border-secondary h-24 w-24 sm:h-28 z-50 sm:w-28 lg:h-36 lg:w-36"
+          className="rounded-full border border-secondary h-24 w-24 sm:h-28 z-50 sm:w-28 lg:h-36 lg:min-w-36"
         />
       </div>
     </div>

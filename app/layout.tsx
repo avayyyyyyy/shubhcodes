@@ -14,23 +14,23 @@ const bricolageGrotesque = Bricolage_Grotesque({
 
 // Metadata configuration for Next.js
 export const metadata: Metadata = {
-  title: "Shubhankit Jain - Full Stack Developer & Designer",
+  title: "Shubhankit Jain - Web Developer & Software Engineer",
   description:
-    "Experienced React Developer with expertise in Next.js, TypeScript, and more. View my portfolio, projects, and achievements.",
+    "Shubhankit Jain's personal portfolio showcasing achievements like winning India's first GEN AI Hackathon, freelancing as a Full Stack AI Developer, and pursuing a Bachelor of Computer Applications at Poornima University.",
   keywords:
-    "Shubhankit Jain, Full Stack Developer, React, Next.js, TypeScript, JavaScript, Web Development",
+    "Shubhankit Jain, portfolio, web developer, software engineer, React, JavaScript, TypeScript, GEN AI Hackathon, Full Stack AI Developer, StoryDev, Poornima University",
   authors: [{ name: "Shubhankit Jain" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.shubhankitjain.com",
+    url: "https://shubhcodes.me",
     siteName: "Shubhankit Jain Portfolio",
-    title: "Shubhankit Jain - Full Stack Developer & Designer",
+    title: "Shubhankit Jain - Web Developer & Software Engineer",
     description:
-      "Experienced React Developer with expertise in Next.js, TypeScript, and more. View my portfolio, projects, and achievements.",
+      "Explore Shubhankit Jain's portfolio featuring his achievements, including winning India's first GEN AI Hackathon, freelancing as a Full Stack AI Developer, and more.",
     images: [
       {
-        url: "https://www.shubhankitjain.com/og-image.jpg",
+        url: "https://utfs.io/f/4e91f9d4-4a88-4b19-a25e-6ebdee6b7229-dhi6qr.png",
         width: 1200,
         height: 630,
         alt: "Shubhankit Jain - Full Stack Developer",
@@ -39,9 +39,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@shubhankitjain",
-    creator: "@shubhankitjain",
-    images: ["https://www.shubhankitjain.com/og-image.jpg"],
+    site: "@shubhcodes",
+    creator: "@shubhcodes",
+    images: [
+      "https://utfs.io/f/4e91f9d4-4a88-4b19-a25e-6ebdee6b7229-dhi6qr.png",
+    ],
   },
   robots: {
     index: true,
@@ -55,14 +57,13 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
   themeColor: "#ffffff",
 };
 
-// RootLayout component
 export default function RootLayout({
   children,
 }: {
@@ -70,6 +71,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Shubhankit Jain",
+            "url": "https://shubhcodes.me",
+            "image": "https://utfs.io/f/4e91f9d4-4a88-4b19-a25e-6ebdee6b7229-dhi6qr.png",
+            "sameAs": [
+              "https://www.linkedin.com/in/shubhcodes",
+              "https://github.com/avayyyyyyy"
+            ],
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Company",
+              "name": "Opinify.in"
+            },
+            "knowsAbout": ["Web Development", "React", "JavaScript", "TypeScript", "AI Development"],
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Poornima University"
+            },
+            "description": "Shubhankit Jain is a Web Developer and Software Engineer with a passion for creating innovative AI-driven solutions. As the winner of India's first GEN AI Hackathon, Shubhankit developed 'StoryDev', a tool for parents to create customizable bedtime stories using GEN AI. He is also a Freelance Full Stack AI Developer and is currently pursuing a Bachelor of Computer Applications at Poornima University."
+          }`}
+        </script>
+        <link rel="canonical" href="https://shubhcodes.me" />
+      </head>
       <body className={`${bricolageGrotesque.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>

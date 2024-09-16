@@ -121,12 +121,12 @@ const DATA = {
         {
           icon: <CodeIcon className="mr-1" size={14} />,
           title: "Code",
-          href: "https://github.com/your-username/storydev",
+          href: "https://github.com/avayyyyyyy/GenAI-Main",
         },
         {
           icon: <GlobeIcon className="mr-1" size={14} />,
           title: "Deployed",
-          href: "https://storydev.com",
+          href: "https://main--storydev.netlify.app/",
         },
       ],
       isWon: true,

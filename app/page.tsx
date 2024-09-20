@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact";
 import Hackathon from "@/components/Hackathon";
 import Intro from "@/components/Intro";
+import NavDock from "@/components/NavDock";
 import Projects from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
@@ -15,6 +16,7 @@ export default function Home() {
         <Projects />
         <Hackathon />
         <Contact />
+        <NavDock />
       </main>
     </div>
   );

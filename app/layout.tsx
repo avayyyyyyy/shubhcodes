@@ -3,7 +3,6 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NavDock from "@/components/NavDock";
 import Meteors from "@/components/magicui/meteors";
 
 // Load Bricolage Grotesque font
@@ -113,10 +112,7 @@ export default function RootLayout({
         className={`${bricolageGrotesque.className} antialiased z-50 overflow-x-hidden`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <NavDock />
-          </TooltipProvider>
+          <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
         </ThemeProvider>
         <Meteors number={30} />
       </body>

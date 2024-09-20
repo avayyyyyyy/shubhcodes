@@ -11,11 +11,10 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import {
-  //   Computer,
-  Home,
   TwitterIcon,
   LinkedinIcon,
   GithubIcon,
+  File,
   //   Globe
 } from "lucide-react";
 import Link from "next/link";
@@ -71,7 +70,7 @@ export default function NavDock() {
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent sideOffset={5}>
-                       <p>{key}</p>
+                      <p>{key}</p>
                     </TooltipContent>
                   </Tooltip>
                 </DockIcon>
@@ -100,9 +99,9 @@ export default function NavDock() {
 const DATA = {
   navbar: [
     {
-      href: "/",
-      label: "Home",
-      icon: Home,
+      href: "/resume",
+      label: "Resume",
+      icon: File,
     },
     // {
     //   href: "/projects",

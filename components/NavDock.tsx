@@ -71,7 +71,7 @@ export default function NavDock() {
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent sideOffset={5}>
-                      <p>{key}</p>
+                       <p>{key}</p>
                     </TooltipContent>
                   </Tooltip>
                 </DockIcon>

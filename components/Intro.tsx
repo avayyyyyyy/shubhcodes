@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CopyCLI from "./CopyCLI";
 
 const Intro = () => {
   return (
@@ -15,6 +16,7 @@ const Intro = () => {
           production-ready. My expertise spans across frontend, backend, and
           full-stack development, with a small knack for deployment.
         </p>
+        <CopyCLI />
       </div>
       <div className="w-full sm:w-1/3 lg:w-4/12 flex justify-center sm:justify-center">
         <Image

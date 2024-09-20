@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Meteors from "@/components/magicui/meteors";
+import { Toaster } from "sonner";
 
 // Load Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -115,6 +116,20 @@ export default function RootLayout({
           <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
         </ThemeProvider>
         <Meteors number={30} />
+        <Toaster
+          theme="light"
+          duration={2000}
+          className="bg-background text-foreground"
+          toastOptions={{
+            classNames: {
+              toast: "bg-secondary text-secondary-foreground border-0",
+              title: "text-secondary-foreground",
+              description: "text-secondary-foreground",
+              actionButton: "bg-primary text-primary-foreground",
+              cancelButton: "bg-muted text-muted-foreground",
+            },
+          }}
+        />
       </body>
     </html>
   );

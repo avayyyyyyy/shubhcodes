@@ -14,7 +14,7 @@ import {
   TwitterIcon,
   LinkedinIcon,
   GithubIcon,
-  File,
+  FileText,
   //   Globe
 } from "lucide-react";
 import Link from "next/link";
@@ -101,7 +101,7 @@ const DATA = {
     {
       href: "/resume",
       label: "Resume",
-      icon: File,
+      icon: FileText,
     },
     // {
     //   href: "/projects",

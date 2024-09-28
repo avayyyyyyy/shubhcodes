@@ -41,7 +41,7 @@ function ProjectCard({
 }) {
   return (
     <>
-      <div className="max-w-sm mb-10 hover:shadow-md flex flex-col justify-between mx-auto border border-primary/10 duration-100 rounded-md py-4 px-3">
+      <div className="max-w-sm mb-10 hover:shadow-md flex flex-col justify-between mx-auto border border-primary/10 hover:border-primary/20 duration-200 rounded-md py-4 px-3">
         <div>
           <div>
             <Image
